@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Math
 %define	pnam	MatrixReal
-%include	/usr/lib/rpm/macros.perl
 Summary:	Math-MatrixReal perl module
 Summary(pl):	Modu³ perla Math-MatrixReal
 Name:		perl-Math-MatrixReal
 Version:	1.3a5
-Release:	5
-
+Release:	6
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -22,7 +21,7 @@ Math-MatrixReal perl module.
 Modu³ perla Math-MatrixReal.
 
 %prep
-%setup -q -n Math-MatrixReal-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
