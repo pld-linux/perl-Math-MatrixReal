@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Math
 %define	pnam	MatrixReal
-Summary:	Math-MatrixReal perl module
-Summary(pl):	Modu³ perla Math-MatrixReal
+Summary:	Math::MatrixReal perl module
+Summary(pl):	Modu³ perla Math::MatrixReal
 Name:		perl-Math-MatrixReal
 Version:	1.3a5
 Release:	6
@@ -15,10 +15,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Math-MatrixReal perl module.
+Math::MatrixReal perl module.
 
 %description -l pl
-Modu³ perla Math-MatrixReal.
+Modu³ perla Math::MatrixReal.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
