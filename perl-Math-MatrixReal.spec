@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Math
 %define	pnam	MatrixReal
-Summary:	Math::MatrixReal perl module
-Summary(pl):	Modu³ perla Math::MatrixReal
+Summary:	Math::MatrixReal - Implements the data type "matrix of reals"
+Summary(pl):	Math::MatrixReal - Implementacja typu danych "macierz liczb rzeczywistych"
 Name:		perl-Math-MatrixReal
 Version:	1.9
 Release:	1
@@ -15,10 +15,13 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Math::MatrixReal perl module.
+Implements the data type "matrix of reals" (and consequently also
+"vector of reals"), which can be used almost like any other basic Perl
+type thanks to B<OPERATOR OVERLOADING>, i.e.,
 
-%description -l pl
-Modu³ perla Math::MatrixReal.
+    $product = $matrix1 * $matrix2;
+
+does what you would like it to do (a matrix multiplication).
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -29,6 +32,7 @@ perl Makefile.PL
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
 %clean
