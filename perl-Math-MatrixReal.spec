@@ -4,8 +4,8 @@
 Summary:	Math::MatrixReal perl module
 Summary(pl):	Modu³ perla Math::MatrixReal
 Name:		perl-Math-MatrixReal
-Version:	1.3a5
-Release:	6
+Version:	1.9
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -39,5 +39,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc *.gz
-%{perl_sitelib}/Math/MatrixReal.pm
+%{perl_sitelib}/Math/*
 %{_mandir}/man3/*
