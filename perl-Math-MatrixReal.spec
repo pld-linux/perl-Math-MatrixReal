@@ -5,7 +5,7 @@ Summary:	Math::MatrixReal - Implements the data type "matrix of reals"
 Summary(pl):	Math::MatrixReal - Implementacja typu danych "macierz liczb rzeczywistych"
 Name:		perl-Math-MatrixReal
 Version:	1.9
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -17,11 +17,16 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Implements the data type "matrix of reals" (and consequently also
 "vector of reals"), which can be used almost like any other basic Perl
-type thanks to B<OPERATOR OVERLOADING>, i.e.,
+type thanks to OPERATOR OVERLOADING, i.e., "$product = $matrix1 *
+$matrix2;" does what you would like it to do (a matrix
+multiplication).
 
-    $product = $matrix1 * $matrix2;
-
-does what you would like it to do (a matrix multiplication).
+%description -l pl
+Ten modu³ jest implementacj± typu danych "macierz liczb rzeczywistych"
+(i w konsekwencji tak¿e "wektor liczb rzeczywistych"), który mo¿e byæ
+u¿ywany prawie tak samo jak ka¿dy inny podstawowy typ Perla dziêki
+przeci±¿aniu operatorów - tzn. "$product = $matrix1 * $matrix2;" zrobi
+to, czego siê oczekuje (pomno¿y macierze).
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
