@@ -9,7 +9,7 @@ Summary:	Math::MatrixReal - implements the data type "matrix of reals"
 Summary(pl):	Math::MatrixReal - implementacja typu danych "macierz liczb rzeczywistych"
 Name:		perl-Math-MatrixReal
 Version:	1.9
-Release:	4
+Release:	5
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
