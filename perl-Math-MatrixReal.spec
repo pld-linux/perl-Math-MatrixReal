@@ -3,7 +3,7 @@ Summary:	Math-MatrixReal perl module
 Summary(pl):	Modu³ perla Math-MatrixReal
 Name:		perl-Math-MatrixReal
 Version:	1.3a5
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
