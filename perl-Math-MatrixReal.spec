@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Math
-%define	pnam	MatrixReal
+%define		pdir	Math
+%define		pnam	MatrixReal
 Summary:	Math::MatrixReal - implements the data type "matrix of reals"
 Summary(pl):	Math::MatrixReal - implementacja typu danych "macierz liczb rzeczywistych"
 Name:		perl-Math-MatrixReal
