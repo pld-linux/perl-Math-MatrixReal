@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Math
 %define	pnam	MatrixReal
@@ -6,7 +10,8 @@ Summary(pl):	Math::MatrixReal - implementacja typu danych "macierz liczb rzeczyw
 Name:		perl-Math-MatrixReal
 Version:	1.9
 Release:	4
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	4df6e63d0e9ff902f1af5dc430a0b483
@@ -36,6 +41,8 @@ to, czego siê oczekuje (pomno¿y macierze).
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
 %{__make}
+
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
