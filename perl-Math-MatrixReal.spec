@@ -34,7 +34,7 @@ to, czego siê oczekuje (pomno¿y macierze).
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 
 %install
