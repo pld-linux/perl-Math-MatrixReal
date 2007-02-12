@@ -6,7 +6,7 @@
 %define		pdir	Math
 %define		pnam	MatrixReal
 Summary:	Math::MatrixReal - implements the data type "matrix of reals"
-Summary(pl):	Math::MatrixReal - implementacja typu danych "macierz liczb rzeczywistych"
+Summary(pl.UTF-8):   Math::MatrixReal - implementacja typu danych "macierz liczb rzeczywistych"
 Name:		perl-Math-MatrixReal
 Version:	1.9
 Release:	6
@@ -27,12 +27,12 @@ type thanks to OPERATOR OVERLOADING, i.e., "$product = $matrix1 *
 $matrix2;" does what you would like it to do (a matrix
 multiplication).
 
-%description -l pl
-Ten modu³ jest implementacj± typu danych "macierz liczb rzeczywistych"
-(i w konsekwencji tak¿e "wektor liczb rzeczywistych"), który mo¿e byæ
-u¿ywany prawie tak samo jak ka¿dy inny podstawowy typ Perla dziêki
-przeci±¿aniu operatorów - tzn. "$product = $matrix1 * $matrix2;" zrobi
-to, czego siê oczekuje (pomno¿y macierze).
+%description -l pl.UTF-8
+Ten moduÅ‚ jest implementacjÄ… typu danych "macierz liczb rzeczywistych"
+(i w konsekwencji takÅ¼e "wektor liczb rzeczywistych"), ktÃ³ry moÅ¼e byÄ‡
+uÅ¼ywany prawie tak samo jak kaÅ¼dy inny podstawowy typ Perla dziÄ™ki
+przeciÄ…Å¼aniu operatorÃ³w - tzn. "$product = $matrix1 * $matrix2;" zrobi
+to, czego siÄ™ oczekuje (pomnoÅ¼y macierze).
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
