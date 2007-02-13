@@ -6,7 +6,7 @@
 %define		pdir	Math
 %define		pnam	MatrixReal
 Summary:	Math::MatrixReal - implements the data type "matrix of reals"
-Summary(pl.UTF-8):   Math::MatrixReal - implementacja typu danych "macierz liczb rzeczywistych"
+Summary(pl.UTF-8):	Math::MatrixReal - implementacja typu danych "macierz liczb rzeczywistych"
 Name:		perl-Math-MatrixReal
 Version:	1.9
 Release:	6
