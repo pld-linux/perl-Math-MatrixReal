@@ -59,7 +59,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README
+%doc CHANGES CREDITS GOALS README TODO
 %{perl_vendorlib}/Math/MatrixReal.pm
 %{_mandir}/man3/Math::Kleene.3pm*
 %{_mandir}/man3/Math::MatrixReal.3pm*
