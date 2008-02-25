@@ -8,13 +8,13 @@
 Summary:	Math::MatrixReal - implements the data type "matrix of reals"
 Summary(pl.UTF-8):	Math::MatrixReal - implementacja typu danych "macierz liczb rzeczywistych"
 Name:		perl-Math-MatrixReal
-Version:	2.02
+Version:	2.04
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Math/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	5a16954fa73b3b181ea8f92fc131d5a7
+# Source0-md5:	79bef6d63ac6572f2952c019ef12501a
 URL:		http://search.cpan.org/dist/Math-MatrixReal/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -60,5 +60,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%{perl_vendorlib}/Math/*
-%{_mandir}/man3/*
+%{perl_vendorlib}/Math/MatrixReal.pm
+%{_mandir}/man3/Math::Kleene.3pm*
+%{_mandir}/man3/Math::MatrixReal.3pm*
